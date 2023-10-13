@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizTemplate.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label 
+            x:Name="QuestionLabel" Text="Question will appear here" 
+            FontSize="36" Margin="0,0,0,20" Padding="10" BackgroundColor="Azure" TextColor="DarkOrchid"/>
+        
+        <Button 
+            BackgroundColor="DarkGoldenrod" TextColor="Black" FontSize="Medium" Padding="10"
+            x:Name="AnswerButton1" Text="Answer 1" 
+            Clicked="OnAnswerButtonClicked"/>
+
+        <Button BackgroundColor="DarkGoldenrod" TextColor="Black" FontSize="Medium" Padding="10"
+                x:Name="AnswerButton2" Text="Answer 2" 
+                Clicked="OnAnswerButtonClicked"/>
+
+        <Button BackgroundColor="DarkGoldenrod" TextColor="black" FontSize="Medium" Padding="10"
+                x:Name="AnswerButton3" Text="Answer 3" 
+                Clicked="OnAnswerButtonClicked"/>
+        
+        <Label x:Name="ScoreLabel" Text="Score: 0" FontSize="18" Margin="0,20,0,0"/>
+    </StackLayout>
+
+
+
+</ContentPage>
